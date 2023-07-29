@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>map</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <link rel="stylesheet" href="map.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+    <script defer src="map.js"></script>
+  </head>
+  <body>
+    <div id="con-select">
+      <label id="select-label" for="country-select">Select a Country:</label>
+      <div class="box">
+        <select id="country-select" name="country">
+          <option value="israel">Israel</option>
+          <option value="cyprus">Cyprus</option>
+          <option value="egypt">Egypt</option>
+          <option value="jordan">Jordan</option>
+          <option value="belize">Belize</option>
+          <option value="france">France</option>
+          <option value="slovakia">Slovakia</option>
+          <option value="croatia">Croatia</option>
+          <option value="iceland">Iceland</option>
+          <option value="portugal">Portugal</option>
+
+          <!-- Add more countries here -->
+        </select>
+      </div>
+    </div>
+
+    <div id="map"></div>
+  </body>
+</html>
