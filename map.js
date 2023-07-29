@@ -1,14 +1,12 @@
 const select = document.getElementById("country-select");
 const theMap = document.getElementById("map");
 const url =
-  //   "https://world-scuba-diving-sites-api.p.rapidapi.com/api/divesite?country=iran";
-  "http://localhost:5500/countries";
+
+   "https://lielzilberman.github.io/countries_api/countries.json";
+;
 const options = {
   method: "GET",
-  //   headers: {
-  //     "X-RapidAPI-Key": "fa75f7cffbmsh2f16132e68bbfdap19ebe4jsnb8ea9113474e",
-  //     "X-RapidAPI-Host": "world-scuba-diving-sites-api.p.rapidapi.com",
-  //   },
+  
 };
 var map;
 
