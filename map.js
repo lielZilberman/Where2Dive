@@ -1,9 +1,8 @@
 const select = document.getElementById("country-select");
 const theMap = document.getElementById("map");
 const url =
-
    "https://lielzilberman.github.io/countries_api/countries.json";
-;
+
 const options = {
   method: "GET",
   
